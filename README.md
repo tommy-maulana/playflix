@@ -6,10 +6,6 @@ An Electron Based Web Video Services Player. Supporting Disney+ Hotstar, Vidio, 
 
 _The apps main menu interface_
 
-## The Pain of Widevine
-
-People using this app should be aware of its difficultly to maintain due to the requirement of Widevine. Widevine is a DRM plugin created by Google and it is used by Netflix, Hulu and many other streaming services. Widevine has already caused an outright fail of Netflix within this app and the only solution I could find ended up with the app having multiple `package.json` files one for each os. They also each use different versions of Electron. The Mac version is using the older version of Electron and it is locked on a version which was published on the 5th of June 2019. Unless a fix presents itself this app will be discontinued in its current form when Netflix stop working on Mac. I have no clue when that will be but my guess is 1-2 years because I am sadly not expecting any working solutions to come foward. The only other possible solution is obtaining a Widevine signing certificate from Google. Which is not possible due to this being a "small" open source project. I may also [copy metastream](https://github.com/samuelmaddock/metastream/issues/85) and move the app to a browser based PWA instead of fully discontinuing it. A good article about this issue can be [read here](https://blog.samuelmaddock.com/posts/google-widevine-blocked-my-browser/).
-
 # Features
 
 - Multiple Streaming Services Support (JSON Configuration to add extra)
@@ -22,51 +18,15 @@ People using this app should be aware of its difficultly to maintain due to the 
 
 # Analytics
 
-This application has analytics built in which is used to help the developers make a better product. [Simple Analytics](https://simpleanalytics.com) was chosen due to their strong views on keeping users private. They are also GDPR, CCPA, & PECR compliant. The data collected by the app can be viewed by anyone [here](https://simpleanalytics.com/electronplayer.otbeaumont.me).
-
-# Installation
-
-## Windows
-
-Please note Windows is currently only partially supported, as it doesn't support the Widevine package I am using. I am working on fixing this. Its progress can be loosely tracked in issue [#2](https://github.com/oscartbeaumont/ElectronPlayer/issues/2) and issue [#35](https://github.com/oscartbeaumont/ElectronPlayer/issues/35)
-
-## macOS
-
-Download the DMG Installer from the [Github Releases here](https://github.com/oscartbeaumont/ElectronPlayer/releases).
-
-## Linux Snap
-
-You can install ElectronPlayer with a snap. This is recommended method of installation for Linux as automatic updates will occur.
-
-```bash
-snap install electronplayer
-```
-
-## Linux AppImage
-
-Download the AppImage from the [Github Releases here](https://github.com/oscartbeaumont/ElectronPlayer/releases).
-
-## Arch Linux AUR
-
-There is an unofficial package on the Arch Linux User Repository provided by [@Scrumplex](https://github.com/Scrumplex).
-
-[electronplayer](https://aur.archlinux.org/packages/electronplayer/)<sup>AUR</sup>
-
-# Contributors
-
-A huge thanks to the following people for contributing and helping shape this project.
-
-- [Austin Kregel](https://github.com/austinkregel)
-- [Rasmus Lindroth](https://github.com/RasmusLindroth)
-- [Scrumplex](https://github.com/Scrumplex)
+This application has analytics built in which is used to help the developers make a better product. [Simple Analytics](https://simpleanalytics.com) was chosen due to their strong views on keeping users private. They are also GDPR, CCPA, & PECR compliant.
 
 # Developing
 
 Sorry in advance that build system currently to get the app working is a mess and requires multiple package.json's this will hopefully be fixed in the future. Please contact me if you need help.
 
 ```bash
-git clone https://github.com/oscartbeaumont/ElectronPlayer.git
-cd ElectronPlayer/
+git clone https://github.com/tommy-maulana/playflix/
+cd playflix/
 
 # For Linux
 ln -s package.linux.json package.json
