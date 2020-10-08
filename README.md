@@ -1,12 +1,8 @@
-## ElectronPlayer
-#### If you are experiencing issues playing DRM content using the Mac version please try the `v3.0.0` beta which can be found [here](https://electronplayer-beta.otbeaumont.me/)
+## PlayFlix
 
-[![Build Status](https://travis-ci.org/oscartbeaumont/ElectronPlayer.svg?branch=master)](https://travis-ci.org/oscartbeaumont/ElectronPlayer)
-[![ElectronPlayer](https://snapcraft.io/electronplayer/badge.svg)](https://snapcraft.io/electronplayer)
+An Electron Based Web Video Services Player. Supporting Disney+ Hotstar, Vidio, iflix, Genflix, Viu, And More.
 
-An Electron Based Web Video Services Player. Supporting Netflix, Youtube, Twitch, Floatplane, Hulu, Amazon Prime Video And More. This is the successor to [Netflix-Desktop](https://github.com/oscartbeaumont/Netflix-Desktop).
-
-![ElectronPlayer Menu](ss/screenshot.png)
+![Main Menu](ss/screenshot.png)
 
 _The apps main menu interface_
 
